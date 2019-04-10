@@ -1,0 +1,26 @@
+// Settings
+@import 'Settings/variables';
+
+// Tools
+@import 'Tools/animation';
+@import 'Tools/mixin';
+
+// Generic
+@import 'Generic/reset';
+@import 'Generic/global';
+@import 'Generic/font';
+
+// Objects
+@import 'Objects/*';
+
+// Components
+@import 'Components/*';
+
+// Pages
+@import 'Pages/home';
+
+// Trumps
+@import 'Trumps/*';
+
+// Vendor
+@import 'Vendor/*';
