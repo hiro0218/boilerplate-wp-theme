@@ -14,6 +14,12 @@ module.exports = {
     source: false,
     publicPath: false,
   },
+  resolve: {
+    modules: [
+      'node_modules',
+      path.join(__dirname, 'src'),
+    ],
+  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].css',
@@ -36,6 +42,9 @@ module.exports = {
         exclude: /node_modules\/(?!(dom7|swiper)\/).*/,
         use: [
           {
+            loader: 'cache-loader',
+          },
+          {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
@@ -54,7 +63,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              url: false,
+              url: true,
             },
           },
           {
@@ -96,7 +105,7 @@ module.exports = {
         test: /\.(gif|png|jpg|svg)$/,
         loader: 'file-loader',
         options: {
-          name: '[path][name].[ext]',
+          name: 'image/[name].[ext]',
         },
       },
     ],
