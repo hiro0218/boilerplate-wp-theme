@@ -79,8 +79,8 @@
     "sass-lint": "^1.12.1",
     "sass-loader": "^7.1.0",
     "url-loader": "^1.1.2",
-    "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.0"
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
