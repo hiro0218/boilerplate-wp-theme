@@ -48,7 +48,7 @@
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
-    "@prettier/plugin-php": "^0.10.2",
+    "@prettier/plugin-php": "^0.11.2",
     "autoprefixer": "^9.5.1",
     "babel-loader": "^8.0.5",
     "cache-loader": "^2.0.1",
@@ -74,7 +74,7 @@
     "postcss-loader": "^3.0.0",
     "postcss-mq-optimize": "^1.1.0",
     "postcss-preset-env": "^6.6.0",
-    "prettier": "^1.17.0",
+    "prettier": "^1.18.2",
     "resolve-url-loader": "^3.1.0",
     "sass-lint": "^1.12.1",
     "sass-loader": "^8.0.0",
