@@ -7,7 +7,7 @@
     "build": "webpack --mode=production",
     "dev": "webpack --mode=development",
     "lint:js": "eslint --ext .js ./src/script/**",
-    "lint:sass": "sass-lint -c .sass-lint.yml -v -q",
+    "lint:sass": "stylelint ./src/style",
     "format:js": "npm run lint:js -- --fix"
   },
   "lint-staged": {
@@ -72,7 +72,6 @@
     "postcss-preset-env": "^6.7.0",
     "prettier": "^1.18.2",
     "resolve-url-loader": "^3.1.0",
-    "sass-lint": "^1.12.1",
     "sass-loader": "^8.0.0",
     "url-loader": "^1.1.2",
     "webpack": "^4.41.0",
