@@ -10,11 +10,6 @@
     "lint:sass": "sass-lint -c .sass-lint.yml -v -q",
     "format:js": "npm run lint:js -- --fix"
   },
-  "browserslist": [
-    "last 1 version",
-    "ie 11",
-    "not dead"
-  ],
   "lint-staged": {
     "**/*.php": [
       "prettier --write",
@@ -49,7 +44,7 @@
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
     "@prettier/plugin-php": "^0.11.2",
-    "autoprefixer": "^9.5.1",
+    "autoprefixer": "^9.6.1",
     "babel-loader": "^8.0.5",
     "cache-loader": "^2.0.1",
     "css-loader": "^2.1.1",
