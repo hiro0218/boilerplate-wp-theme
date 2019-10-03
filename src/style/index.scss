@@ -1,24 +1,11 @@
-// Settings
-@import 'Settings/variables';
-
-// Tools
-@import 'Tools/animation';
-@import 'Tools/mixin';
-
-// Generic
+@import 'Settings';
+@import 'Tools';
 @import 'Generic';
-
-// Objects
-@import 'Objects/*';
-
-// Components
-@import 'Components/*';
-
-// Pages
-@import 'Pages/home';
-
-// Trumps
-@import 'Trumps/*';
-
-// Vendor
-@import 'Vendor/*';
+@import 'Elements';
+@import 'Layouts';
+@import 'Objects';
+@import 'Vendor';
+@import 'Components';
+@import 'Projects';
+@import 'Pages';
+@import 'Trumps';
