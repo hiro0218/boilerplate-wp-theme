@@ -19,6 +19,7 @@
       "eslint"
     ],
     "**/*.scss": [
+      "stylelint",
       "npm run lint:sass"
     ]
   },
