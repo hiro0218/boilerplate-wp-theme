@@ -1,5 +1,5 @@
 // css
-import '../style/index.scss';
+import '@style/index.scss';
 
 // js
 import loadEvents from './eventLoader';

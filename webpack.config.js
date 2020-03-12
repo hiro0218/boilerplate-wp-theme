@@ -21,6 +21,12 @@ module.exports = {
       'node_modules',
       path.join(__dirname, 'src'),
     ],
+    alias: {
+      '@src': path.resolve(path.join(__dirname, 'src')),
+      '@script': path.resolve(path.join(__dirname, 'src/script')),
+      '@style': path.resolve(path.join(__dirname, 'src/style')),
+      '@image': path.resolve(path.join(__dirname, 'src/image')),
+    },
   },
   plugins: [
     new MiniCssExtractPlugin({
