@@ -1,5 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Sass = require('sass');
+const Fiber = require('fibers');
 
 module.exports = {
   mode: 'development',
@@ -58,6 +60,9 @@ module.exports = {
         test: /\.scss$/,
         use: [
           {
+            loader: 'style-loader'
+          },
+          {
             loader: MiniCssExtractPlugin.loader,
           },
           {
@@ -98,6 +103,12 @@ module.exports = {
           },
           {
             loader: 'sass-loader',
+            options: {
+              implementation: Sass,
+              sassOptions: {
+                fiber: Fiber
+              },
+            },
           },
         ],
       },
