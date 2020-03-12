@@ -12,17 +12,14 @@
   },
   "lint-staged": {
     "**/*.php": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
     "**/*.js": [
       "eslint --fix",
-      "eslint",
-      "git add"
+      "eslint"
     ],
     "**/*.scss": [
-      "npm run lint:sass",
-      "git add"
+      "npm run lint:sass"
     ]
   },
   "husky": {
