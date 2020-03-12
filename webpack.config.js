@@ -81,15 +81,11 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               plugins: [
-                require('autoprefixer')({
-                  grid: true,
-                  cascade: false,
-                }),
                 require('postcss-flexbugs-fixes')(),
                 require('postcss-preset-env')({
                   stage: 3,
                 }),
-                require('postcss-mq-optimize'),
+                require('postcss-sort-media-queries'),
                 require('cssnano')({
                   preset: [
                     'default',
