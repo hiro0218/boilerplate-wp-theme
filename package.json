@@ -19,8 +19,7 @@
       "eslint"
     ],
     "**/*.scss": [
-      "stylelint",
-      "npm run lint:sass"
+      "stylelint"
     ]
   },
   "husky": {
